@@ -1,0 +1,15 @@
+{
+  "font": {
+    "size": {
+      "base": { "value": "16px" }
+    },
+    "color": {
+      "base": { "value": "{color.black.value}" },
+      "inverse": { "value": "{color.white.value}" }
+    },
+    "weight": {
+      "normal": { "value": "500" },
+      "bold": { "value": "600" }
+    }
+  }
+}

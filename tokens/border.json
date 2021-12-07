@@ -1,0 +1,8 @@
+{
+  "boder": {
+    "radius": {
+      "sm": { "value": "0.25rem" },
+      "md": { "value": "0.625rem" }
+    }
+  }
+}

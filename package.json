@@ -9,6 +9,7 @@
     "lint": "next lint",
     "commit": "npx git-cz",
     "storybook": "start-storybook -p 6006",
+    "build-tokens": "style-dictionary build --config ./tokens/config.js",
     "build-storybook": "build-storybook",
     "prepare": "husky install"
   },
@@ -42,6 +43,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
+    "style-dictionary": "^3.0.3",
     "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-order": "^5.0.0",

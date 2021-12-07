@@ -1,0 +1,28 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 10 Nov 2021 02:31:23 GMT
+ */
+
+:root {
+  --boder-radius-sm: 0.25rem;
+  --boder-radius-md: 0.625rem;
+  --color-primary: #ff8d1b;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --font-size-base: 16px;
+  --font-color-base: #000000;
+  --font-color-inverse: #ffffff;
+  --font-weight-normal: 500;
+  --font-weight-bold: 600;
+  --shadow-sm: 0px 10px 10px 0px #0000000d;
+  --size-1: 0.75rem;
+  --size-2: 1rem;
+  --size-3: 1.25rem;
+  --size-4: 1.5rem;
+  --size-5: 2rem;
+  --size-6: 2.5rem;
+  --size-7: 3rem;
+  --size-8: 3.5rem;
+  --size-10: 4.5rem;
+  --size-13: 8.75rem;
+}

@@ -1,0 +1,8 @@
+{
+  "color": {
+    "primary": { "value": "#FF8D1B" },
+
+    "white": { "value": "#ffffff" },
+    "black": { "value": "#000000" }
+  }
+}
