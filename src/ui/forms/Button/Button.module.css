@@ -1,0 +1,19 @@
+.button {
+  color: var(--font-color-inverse);
+  font-size: var(--font-size-base);
+  border-color: var(--color-base-transparent);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-3) var(--spacing-8);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.typePrimary {
+  color: var(--button-type-primary-color);
+  background-color: var(--button-type-primary-background-color);
+}
+
+.typeSecondary {
+  color: var(--button-type-secondary-color);
+  background-color: var(--button-type-secondary-background-color);
+}

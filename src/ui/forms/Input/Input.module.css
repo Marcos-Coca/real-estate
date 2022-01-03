@@ -1,0 +1,11 @@
+.input {
+  height: var(--input-base-height);
+  padding-left: var(--spacing-3);
+  border-radius: var(--border-radius-xs);
+  border-color: var(--color-base-transparent);
+  background-color: var(--input-base-background-color);
+}
+
+.input:focus {
+  outline: none;
+}
