@@ -1,11 +1,12 @@
 {
   "font": {
     "size": {
-      "base": { "value": "16px" }
+      "base": { "value": "16px" },
+      "5": { "value": "18px" }
     },
     "color": {
-      "base": { "value": "{color.black.value}" },
-      "inverse": { "value": "{color.white.value}" }
+      "base": { "value": "{color.base.black.value}" },
+      "inverse": { "value": "{color.base.white.value}" }
     },
     "weight": {
       "normal": { "value": "500" },

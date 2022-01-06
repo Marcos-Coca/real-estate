@@ -1,0 +1,8 @@
+{
+  "input": {
+    "base": {
+      "height": { "value": "{size.6.value}" },
+      "background-color": { "value": "{color.neutral.200.value}" }
+    }
+  }
+}

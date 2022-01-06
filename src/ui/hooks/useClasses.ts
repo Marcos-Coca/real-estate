@@ -6,7 +6,7 @@ import { capitalize } from "../utils/capitalize";
 interface Params {
   classes?: string[];
   styles?: Record<string, string>;
-  stylesClasses?: Record<string, string | boolean>;
+  stylesClasses?: Record<string, string | boolean | undefined | number>;
 }
 
 export const useClasses = ({ styles = {}, stylesClasses = {}, classes }: Params) => {
@@ -26,7 +26,7 @@ export const useClasses = ({ styles = {}, stylesClasses = {}, classes }: Params)
     Object.entries(stylesClasses).forEach(([classKey, classValue]) => {
       typeof classValue === "boolean"
         ? setClassWithStyles(classKey)
-        : setClassWithStyles(`${classKey}${capitalize(classValue)}`);
+        : classValue && setClassWithStyles(`${classKey}${capitalize(classValue.toString())}`);
     });
   }, [styles, stylesClasses, classes]);
 

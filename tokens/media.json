@@ -1,0 +1,11 @@
+{
+  "media": {
+    "screen": {
+      "xs": { "value": "480px" },
+      "sm": { "value": "768px" },
+      "md": { "value": "992px" },
+      "lg": { "value": "1200px" },
+      "xl": { "value": "1800px" }
+    }
+  }
+}

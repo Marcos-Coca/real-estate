@@ -1,0 +1,14 @@
+{
+  "button": {
+    "type": {
+      "primary": {
+        "color": { "value": "{color.base.white.value}" },
+        "background-color": { "value": "{color.brand.primary.value}" }
+      },
+      "secondary": {
+        "color": { "value": "{color.base.black.value}" },
+        "background-color": { "value": "{color.base.white.value}" }
+      }
+    }
+  }
+}
