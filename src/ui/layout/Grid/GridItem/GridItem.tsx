@@ -1,7 +1,7 @@
 import React from "react";
 import { useClasses } from "../../../hooks/useClasses";
 import styles from "./GridItem.module.css";
-export const GridItem = ({ children, col }: Props) => {
+export const GridItem = ({ children, col = 1 }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
@@ -13,11 +13,11 @@ export const GridItem = ({ children, col }: Props) => {
 };
 
 interface Props {
-  xs?: number;
-  sm?: number;
-  md?: number;
-  lg?: number;
-  xl?: number;
   col?: number;
+  colXs?: number;
+  colSm?: number;
+  colMd?: number;
+  colLg?: number;
+  colXl?: number;
   children: React.ReactNode;
 }

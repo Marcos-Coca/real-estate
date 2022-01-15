@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "./Button.module.css";
+import { styles } from ".";
 import { useClasses } from "../../hooks/useClasses";
 
-export function Button({ isDisabled = false, type = "primary", children }: Props) {
+export const Button = ({ isDisabled, type, children }: Props) => {
   const classes = useClasses({ styles, stylesClasses: { type, button: true } });
 
   return (
@@ -11,7 +11,7 @@ export function Button({ isDisabled = false, type = "primary", children }: Props
       {children}
     </button>
   );
-}
+};
 
 interface Props {
   /**
@@ -31,3 +31,8 @@ interface Props {
    */
   children: string;
 }
+
+Button.defaultProps = {
+  type: "primary",
+  isDisabled: false,
+};

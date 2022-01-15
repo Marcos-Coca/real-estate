@@ -1,0 +1,19 @@
+.colorBase {
+  color: var(--font-color-base);
+}
+
+.colorInverse {
+  color: var(--font-color-inverse);
+}
+
+.sizeSm {
+  font-size: var(--font-size-3);
+}
+
+.sizeMd {
+  font-size: var(--font-size-base);
+}
+
+.sizeLg {
+  font-size: var(--font-size-5);
+}
