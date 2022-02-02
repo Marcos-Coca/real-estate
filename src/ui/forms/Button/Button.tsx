@@ -1,7 +1,7 @@
 import React from "react";
 
 import { styles } from ".";
-import { useClasses } from "../../hooks/useClasses";
+import { useClasses } from "@ui/hooks/useClasses";
 
 export const Button = ({ isDisabled, type, children }: Props) => {
   const classes = useClasses({ styles, stylesClasses: { type, button: true } });
