@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 10 Jan 2022 01:13:56 GMT
+ * Generated on Wed, 02 Feb 2022 01:41:54 GMT
  */
 
 :root {
@@ -150,7 +150,8 @@
   --media-screen-md: 992px;
   --media-screen-lg: 1200px;
   --media-screen-xl: 1800px;
-  --shadow-sm: 0px 10px 10px 0px #0000000D;
+  --shadow-sm: 0px 10px 10px 0px #0000000d;
+  --shadow-md: 0px 2px 40px rgba(0, 0, 0, 0.1);
   --size-1: 0.75rem;
   --size-2: 1rem;
   --size-3: 1.25rem;

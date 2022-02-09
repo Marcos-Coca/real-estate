@@ -1,0 +1,7 @@
+.sizeMd svg {
+  width: var(--size-2);
+}
+
+.sizeLg {
+  width: var(--size-4);
+}

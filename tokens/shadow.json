@@ -1,5 +1,6 @@
 {
   "shadow": {
-    "sm": { "value": "0px 10px 10px 0px #0000000D" }
+    "sm": { "value": "0px 10px 10px 0px #0000000D" },
+    "md": { "value": " 0px 2px 40px rgba(0, 0, 0, 0.1)" }
   }
 }

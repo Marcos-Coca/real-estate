@@ -24,9 +24,11 @@ export const useClasses = ({ styles = {}, stylesClasses = {}, classes }: Params)
     };
 
     Object.entries(stylesClasses).forEach(([classKey, classValue]) => {
-      typeof classValue === "boolean"
-        ? setClassWithStyles(classKey)
-        : classValue && setClassWithStyles(`${classKey}${capitalize(classValue.toString())}`);
+      if (classValue) {
+        typeof classValue === "boolean"
+          ? setClassWithStyles(classKey)
+          : setClassWithStyles(`${classKey}${capitalize(classValue.toString())}`);
+      }
     });
   }, [styles, stylesClasses, classes]);
 
