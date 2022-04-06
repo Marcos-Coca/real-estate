@@ -3,11 +3,25 @@
     "size": {
       "base": { "value": "16px" },
       "3": { "value": "12px" },
-      "5": { "value": "18px" }
+      "5": { "value": "18px" },
+      "6": { "value": "20px" },
+      "7": { "value": "22px" },
+      "8": { "value": "25px" },
+      "9": { "value": "28px" },
+      "10": { "value": "30px" },
+      "11": { "value": "32px" },
+      "12": { "value": "35px" },
+      "13": { "value": "38px" },
+      "14": { "value": "40px" },
+      "15": { "value": "42px" },
+      "16": { "value": "45px" },
+      "17": { "value": "47px" },
+      "18": { "value": "50px" }
     },
     "color": {
       "base": { "value": "{color.neutral.700.value}" },
-      "inverse": { "value": "{color.base.white.value}" }
+      "inverse": { "value": "{color.base.white.value}" },
+      "primary": { "value": "{color.brand.primary.value}" }
     },
     "weight": {
       "normal": { "value": "500" },

@@ -1,3 +1,3 @@
 export const options = {
-  sizes: <const>["sm", "md", "lg"],
+  sizes: ["sm", "md", "lg"] as const,
 };

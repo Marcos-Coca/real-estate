@@ -1,0 +1,39 @@
+.sizeMd {
+  font-size: var(--font-size-6);
+}
+
+.isShaded {
+  text-shadow: var(--text-shadow-md);
+}
+
+.sizeLg {
+  font-size: var(--font-size-10);
+}
+
+.sizeXl {
+  font-size: var(--font-size-12);
+}
+
+.size2xl {
+  font-size: var(--font-size-14);
+}
+
+.size3xl {
+  font-size: var(--font-size-18);
+}
+
+.weightBold {
+  font-weight: var(--font-weight-bold);
+}
+
+.colorBase {
+  color: var(--font-color-base);
+}
+
+.colorInverse {
+  color: var(--font-color-inverse);
+}
+
+.colorPrimary {
+  color: var(--font-color-primary);
+}

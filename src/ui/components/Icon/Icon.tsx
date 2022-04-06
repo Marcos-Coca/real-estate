@@ -11,7 +11,6 @@ export const Icon = ({ name, size }: Props) => {
       size,
     },
   });
-  console.log(classes);
   return <ReactSVG className={classes} src={`/icons/${name}.svg`} />;
 };
 
