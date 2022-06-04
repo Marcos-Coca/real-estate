@@ -6,6 +6,8 @@ import { Grid } from "@ui/layout/Grid/Grid";
 import { GridItem } from "@ui/layout/Grid/GridItem";
 import { Input } from "@ui/forms/Input";
 
+import { withLayout } from "@shared/hocs/withLayout";
+
 const Home: NextPage = () => {
   return (
     <>
@@ -32,4 +34,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default withLayout(Home, "main");

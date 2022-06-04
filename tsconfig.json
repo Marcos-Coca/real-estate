@@ -16,7 +16,9 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@ui/*": ["./ui/*"]
+      "@ui/*": ["./ui/*"],
+      "@main/*": ["./main/*"],
+      "@shared/*": ["./shared/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
