@@ -5,6 +5,10 @@ export default {
   title: "Component/Heading",
   component: Heading,
   args: {
+    size: "md",
+    color: "base",
+    weight: "bold",
+    isShaded: false,
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet suscipit ex. Proin scelerisque dapibus commodo. Maecenas mollis lacus eu sem venenatis blandit",
   },

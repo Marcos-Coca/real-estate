@@ -3,16 +3,6 @@ import React from "react";
 import { styles } from ".";
 import { useClasses } from "@ui/hooks/useClasses";
 
-export const Button = ({ isDisabled, type, children }: Props) => {
-  const classes = useClasses({ styles, stylesClasses: { type, button: true } });
-
-  return (
-    <button disabled={isDisabled} className={classes}>
-      {children}
-    </button>
-  );
-};
-
 interface Props {
   /**
    * specify button colors.
@@ -32,7 +22,12 @@ interface Props {
   children: string;
 }
 
-Button.defaultProps = {
-  type: "primary",
-  isDisabled: false,
+export const Button = ({ isDisabled, type = "primary", children }: Props) => {
+  const classes = useClasses({ styles, stylesClasses: { type, button: true } });
+
+  return (
+    <button disabled={isDisabled} className={classes}>
+      {children}
+    </button>
+  );
 };

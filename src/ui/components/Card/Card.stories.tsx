@@ -7,7 +7,7 @@ export default {
   title: "Component/Card",
   component: Card,
   args: {
-    ...Card.defaultProps,
+    isShaded: true,
   },
   argTypes: {
     size: {

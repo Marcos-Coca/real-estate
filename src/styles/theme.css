@@ -1,0 +1,15 @@
+@import "./tokens.css";
+
+:root {
+  --button-type-primary-color: var(--color-base-white);
+  --button-type-primary-background-color: var(--color-brand-primary);
+  --button-type-secondary-color: var(--color-base-black);
+  --button-type-secondary-background-color: var(--color-base-white);
+
+  --input-base-height: var(--size-6);
+  --input-base-background-color: var(--color-neutral-200);
+
+  --page-background-color: var(--color-base-white);
+
+  --card-background-color: var(--color-base-white);
+}

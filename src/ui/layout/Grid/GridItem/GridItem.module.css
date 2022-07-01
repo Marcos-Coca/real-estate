@@ -39,3 +39,7 @@
 .col1 {
   grid-column: span 1;
 }
+
+.gridItem {
+  position: relative;
+}

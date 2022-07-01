@@ -2,7 +2,13 @@ import { useClasses } from "../../hooks/useClasses";
 
 import { options, styles } from ".";
 
-export const Paragraph = ({ children, size, color }: Props) => {
+interface Props {
+  children: string;
+  size?: typeof options.sizes[number];
+  color?: typeof options.colors[number];
+}
+
+export const Paragraph = ({ children, size = "md", color = "base" }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
@@ -11,15 +17,4 @@ export const Paragraph = ({ children, size, color }: Props) => {
     },
   });
   return <p className={classes}>{children}</p>;
-};
-
-interface Props {
-  children: string;
-  size: typeof options.sizes[number];
-  color: typeof options.colors[number];
-}
-
-Paragraph.defaultProps = {
-  size: "md",
-  color: "base",
 };

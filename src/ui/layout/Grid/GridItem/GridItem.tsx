@@ -1,12 +1,15 @@
 import React from "react";
 import { useClasses } from "../../../hooks/useClasses";
+
 import styles from "./GridItem.module.css";
+
 export const GridItem = ({ children, col = 1 }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
       col,
     },
+    classes: [styles.gridItem],
   });
 
   return <div className={classes}>{children}</div>;

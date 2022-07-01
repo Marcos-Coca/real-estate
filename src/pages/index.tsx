@@ -1,36 +1,35 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+
+import { Grid, GridItem } from "@ui/layout/Grid";
 import { Heading } from "@ui/components/Heading";
-import { Card } from "@ui/components/Card";
-import { Button } from "@ui/forms/Button";
-import { Grid } from "@ui/layout/Grid/Grid";
-import { GridItem } from "@ui/layout/Grid/GridItem";
-import { Input } from "@ui/forms/Input";
 
 import { withLayout } from "@shared/hocs/withLayout";
+import { Center } from "@ui/layout/Center";
+import { SearchRentForm } from "@main/components/SearchRentForm/SearchRentForm";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Heading isShaded={true} size="3xl">
-        Need to Rent a House?
-      </Heading>
-      <Heading isShaded={true}>Well help you find your next home</Heading>
-      <Card>
-        <Grid>
-          <GridItem col={6}>
-            Address
-            <Input type="text"></Input>
-          </GridItem>
-          <GridItem col={3}>
-            Unit
-            <Input type="text"></Input>
-          </GridItem>
-          <GridItem col={12}>
-            <Button>Submit</Button>
-          </GridItem>
-        </Grid>
-      </Card>
-    </>
+    <Grid>
+      <GridItem col={6}>
+        <Center>
+          <Heading size="3xl">Need to Rent a House?</Heading>
+          <Heading>Well help you find your next home</Heading>
+
+          <SearchRentForm />
+        </Center>
+      </GridItem>
+      <GridItem col={6}>
+        <Image
+          src="/images/landing-house-image.png"
+          width="100%"
+          height="80%"
+          layout="responsive"
+          objectFit="cover"
+          alt="house"
+        />
+      </GridItem>
+    </Grid>
   );
 };
 

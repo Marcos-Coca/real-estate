@@ -1,7 +1,15 @@
 import { useClasses } from "@ui/hooks/useClasses";
 import { options, styles } from ".";
 
-export const Heading = ({ children, size, color, weight, isShaded }: Props) => {
+interface Props {
+  children: string;
+  isShaded?: boolean;
+  size?: typeof options.sizes[number];
+  color?: typeof options.colors[number];
+  weight?: typeof options.weights[number];
+}
+
+export const Heading = ({ children = "", size = "md", color = "base", weight = "bold", isShaded }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
@@ -13,19 +21,4 @@ export const Heading = ({ children, size, color, weight, isShaded }: Props) => {
   });
 
   return <div className={classes}>{children}</div>;
-};
-
-interface Props {
-  children: string;
-  isShaded: boolean;
-  size: typeof options.sizes[number];
-  color: typeof options.colors[number];
-  weight: typeof options.weights[number];
-}
-
-Heading.defaultProps = {
-  size: "md",
-  color: "base",
-  weight: "bold",
-  isShaded: false,
 };

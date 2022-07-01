@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 18 Mar 2022 01:14:53 GMT
+ * Generated on Sat, 04 Jun 2022 23:16:26 GMT
  */
 
 :root {
@@ -132,12 +132,6 @@
   --color-yellow-900: #944c0c;
   --color-yellow-1000: #542a00;
   --color-brand-primary: #ff8d1b;
-  --button-type-primary-color: #ffffff;
-  --button-type-primary-background-color: #ff8d1b;
-  --button-type-secondary-color: #000000;
-  --button-type-secondary-background-color: #ffffff;
-  --input-base-height: 2.5rem;
-  --input-base-background-color: #e7e7e7;
   --font-size-3: 12px;
   --font-size-5: 18px;
   --font-size-6: 20px;
@@ -164,9 +158,9 @@
   --media-screen-md: 992px;
   --media-screen-lg: 1200px;
   --media-screen-xl: 1800px;
-  --box-shadow-sm: 0px 10px 10px 0px #0000000d;
-  --box-shadow-md: 0px 2px 40px rgba(0, 0, 0, 0.1);
-  --text-shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow-sm: 0px 10px 10px 0px #0000000D;
+  --box-shadow-md:  0px 2px 40px rgba(0, 0, 0, 0.1);
+  --text-shadow-md: 0px 4px 4px rgba(0,0,0,0.25);
   --size-1: 0.75rem;
   --size-2: 1rem;
   --size-3: 1.25rem;
@@ -187,4 +181,8 @@
   --spacing-8: 2.5rem;
   --spacing-9: 3rem;
   --spacing-10: 3.5rem;
+  --spacing-11: 4rem;
+  --spacing-12: 4.5rem;
+  --spacing-13: 5rem;
+  --spacing-14: 5.5rem;
 }

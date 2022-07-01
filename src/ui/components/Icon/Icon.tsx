@@ -4,7 +4,12 @@ import { ReactSVG } from "react-svg";
 
 import { options, styles } from ".";
 
-export const Icon = ({ name, size }: Props) => {
+interface Props {
+  name: string;
+  size?: typeof options.sizes[number];
+}
+
+export const Icon = ({ name, size = "md" }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
@@ -12,13 +17,4 @@ export const Icon = ({ name, size }: Props) => {
     },
   });
   return <ReactSVG className={classes} src={`/icons/${name}.svg`} />;
-};
-
-interface Props {
-  name: string;
-  size: typeof options.sizes[number];
-}
-
-Icon.defaultProps = {
-  size: "md",
 };
