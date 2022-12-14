@@ -3,7 +3,11 @@ import "../styles/tokens.css";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <div className="pageContainer">
+      <Component {...pageProps} />;
+    </div>
+  );
 }
 
 export default MyApp;

@@ -8,4 +8,5 @@ export interface FormControl {
   isRequired?: boolean;
   isReadOnly?: boolean;
   placeholder?: string;
+  label?: string;
 }

@@ -1,7 +1,9 @@
+import { SpaceProps } from "@ui/config/space";
 import { useClasses } from "@ui/hooks/useClasses";
+import { useStyleConfig } from "@ui/hooks/useStyleConfig";
 import { options, styles } from ".";
 
-interface Props {
+interface Props extends SpaceProps {
   children: string;
   isShaded?: boolean;
   size?: typeof options.sizes[number];
@@ -9,7 +11,7 @@ interface Props {
   weight?: typeof options.weights[number];
 }
 
-export const Heading = ({ children = "", size = "md", color = "base", weight = "bold", isShaded }: Props) => {
+export const Heading = ({ children = "", size = "md", color = "base", weight = "bold", isShaded, ...rest }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
@@ -19,6 +21,11 @@ export const Heading = ({ children = "", size = "md", color = "base", weight = "
       isShaded,
     },
   });
+  const style = useStyleConfig(rest);
 
-  return <div className={classes}>{children}</div>;
+  return (
+    <div style={style} className={classes}>
+      {children}
+    </div>
+  );
 };

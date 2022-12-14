@@ -12,16 +12,16 @@ interface Params {
 export const useClasses = ({ styles = {}, stylesClasses = {}, classes }: Params) => {
   const [composedClasses, setComposedClasses] = useState<string>("");
 
+  const setClassWithStyles = (className: string) => {
+    setComposedClasses((composedClasses) => classNames(composedClasses, styles[className]));
+  };
+
   useEffect(() => {
     setComposedClasses("");
 
     if (classes) {
       setComposedClasses((composedClasses) => classNames(composedClasses, classes));
     }
-
-    const setClassWithStyles = (className: string) => {
-      setComposedClasses((composedClasses) => classNames(composedClasses, styles[className]));
-    };
 
     Object.entries(stylesClasses).forEach(([classKey, classValue]) => {
       if (classValue) {

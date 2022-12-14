@@ -1,11 +1,18 @@
-.input {
+.formGroup input {
   height: var(--input-base-height);
+  font-size: var(--font-size-5);
   padding-left: var(--spacing-3);
   border-radius: var(--border-radius-xs);
   border-color: var(--color-base-transparent);
   background-color: var(--input-base-background-color);
 }
 
-.input:focus {
+.formGroup input:focus {
   outline: none;
+}
+
+.formGroup label {
+  display: block;
+  font-size: var(--font-size-5);
+  margin-bottom: var(--spacing-3);
 }
