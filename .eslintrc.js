@@ -4,7 +4,14 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["plugin:react/recommended", "standard", "next/core-web-vitals", "prettier", "plugin:storybook/recommended"],
+  extends: [
+    "plugin:react/recommended",
+    "standard",
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:storybook/recommended",
+    "react/jsx-runtime",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -13,7 +20,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "jsx-a11y"],
   rules: {
     "no-console": "error",
     "no-debugger": "error",

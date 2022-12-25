@@ -22,14 +22,7 @@ const Home: NextPage = () => {
         </section>
       </GridItem>
       <GridItem col={6}>
-        <Image
-          src="/images/landing-house-image.png"
-          width="100%"
-          height="80%"
-          layout="responsive"
-          objectFit="cover"
-          alt="house"
-        />
+        <Image src="/images/landing-house-image.png" width={100} height={80} alt="house" />
       </GridItem>
 
       <style jsx>
