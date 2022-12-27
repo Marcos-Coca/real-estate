@@ -1,6 +1,5 @@
 .button {
   color: var(--font-color-inverse);
-  font-size: var(--font-size-base);
   border-color: var(--color-base-transparent);
   border-radius: var(--border-radius-sm);
   padding: var(--spacing-3) var(--spacing-8);
