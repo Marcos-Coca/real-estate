@@ -64,6 +64,7 @@
     "prettier": "^2.4.1",
     "style-dictionary": "^3.0.3",
     "stylelint": "^14.0.1",
+    "stylelint-config-prettier": "9.0.4",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-order": "^5.0.0",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
@@ -75,7 +76,10 @@
     ".css": "stylelint --fix"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard",
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
     "rules": {
       "selector-class-pattern": [
         "^[a-z][a-zA-Z0-9]*$",
@@ -89,7 +93,13 @@
     ]
   },
   "prettier": {
-    "printWidth": 120
+    "printWidth": 120,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
   "commitlint": {
     "extends": [
