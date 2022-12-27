@@ -5,7 +5,6 @@ import { Card } from "@ui/components/Card";
 import { Grid, GridItem } from "@ui/layout/Grid";
 import { Heading } from "@ui/components/Heading";
 
-import { withLayout } from "@shared/hocs/withLayout";
 import { SearchRentForm } from "@main/components/SearchRentForm";
 
 const Home: NextPage = () => {
@@ -41,4 +40,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default withLayout(Home, "main");
+export default Home;
