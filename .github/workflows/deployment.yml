@@ -87,7 +87,7 @@ jobs:
           name: .next
           path: .next
       - name: Cypress run
-        uses: cypress-io/github-action@v5.x.x # use the explicit version number
+        uses: cypress-io/github-action@v5
         with:
           # we have already installed all dependencies above
           install: false
