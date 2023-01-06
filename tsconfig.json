@@ -23,6 +23,7 @@
       "@tokens/*": ["../tokens/*"]
     }
   },
+
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": [
     "node_modules",
@@ -34,5 +35,6 @@
     "**/*.stories.tsx",
     "cypress/**/*",
     "**/*.cy.tsx"
-  ]
+  ],
+  "types": ["node", "jest", "cypress"]
 }

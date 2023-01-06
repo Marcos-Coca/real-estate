@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from "react";
-import Home from "../../pages/index";
+import Home from "../../src/pages/index";
 
 describe("<Home />", () => {
   it("renders", () => {
