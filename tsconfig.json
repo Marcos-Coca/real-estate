@@ -32,6 +32,7 @@
     "**/*.spec.tsx",
     "**/*.stories.ts",
     "**/*.stories.tsx",
-    "cypress/**/*"
+    "cypress/**/*",
+    "**/*.cy.tsx"
   ]
 }
