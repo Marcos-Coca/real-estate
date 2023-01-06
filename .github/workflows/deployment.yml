@@ -86,6 +86,12 @@ jobs:
         with:
           name: .next
           path: .next
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
@@ -99,6 +105,9 @@ jobs:
           parallel: true
           group: "UI - Chrome"
           spec: cypress/*
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{github.token}}
 
   Deploy-Production:
     runs-on: ubuntu-latest
