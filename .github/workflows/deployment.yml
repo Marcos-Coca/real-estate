@@ -77,7 +77,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1, 2, 3]
+        containers: [1, 2]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -89,7 +89,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          # we have already installed all dependencies above
+          command: npm run test:e2e
           install: false
           start: npm run start
           wait-on: "http://localhost:3000"
@@ -98,7 +98,7 @@ jobs:
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: cypress/e2e/*
+          spec: cypress/*
 
   Deploy-Production:
     runs-on: ubuntu-latest

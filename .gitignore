@@ -40,5 +40,11 @@ yarn-error.log*
 #eslint
 .eslintcache
 /test-results/
-/playwright-report/
-/playwright/.cache/
+
+
+
+# cypress
+cypress/videos
+cypress/screenshots
+
+
