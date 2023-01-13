@@ -70,14 +70,10 @@ jobs:
       - name: Unit tests
         run: npm run test:ci
 
-  UI-Chrome-Tests:
+  Test-E2E:
     runs-on: "ubuntu-latest"
     needs: [Build, Unit-Tests, Lint]
     container: cypress/browsers:node12.18.3-chrome87-ff82
-    strategy:
-      fail-fast: false
-      matrix:
-        containers: [1, 2]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -90,6 +86,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: .next
+          if-no-files-found: error
           path: .next
 
       - name: Cypress run
@@ -104,7 +101,33 @@ jobs:
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: cypress/*
+          spec: cypress/e2e/*
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{github.token}}
+
+  Components-Testing:
+    runs-on: "ubuntu-latest"
+    needs: [Build, Unit-Tests, Lint]
+    container: cypress/included:12.3.0
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Cypress Component Tests
+        uses: cypress-io/github-action@v5
+        with:
+          install: true
+          browser: chrome
+          component: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{github.token}}
