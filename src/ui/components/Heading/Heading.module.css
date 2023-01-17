@@ -1,3 +1,7 @@
+.heading {
+  margin: 0;
+}
+
 .sizeMd {
   font-size: var(--font-size-6);
 }

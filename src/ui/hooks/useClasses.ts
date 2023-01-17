@@ -12,11 +12,11 @@ interface Params {
 export const useClasses = ({ styles = {}, stylesClasses = {}, classes }: Params) => {
   const [composedClasses, setComposedClasses] = useState<string>("");
 
-  const setClassWithStyles = (className: string) => {
-    setComposedClasses((composedClasses) => classNames(composedClasses, styles[className]));
-  };
-
   useEffect(() => {
+    const setClassWithStyles = (className: string) => {
+      setComposedClasses((composedClasses) => classNames(composedClasses, styles[className]));
+    };
+
     setComposedClasses("");
 
     if (classes) {

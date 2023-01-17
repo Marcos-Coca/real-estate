@@ -1,4 +1,6 @@
-import * as CSS from "csstype";
+import spacing from "@tokens/spacing.json";
+
+const spacingOptions = spacing.spacing;
 
 export const spaces: Record<string, string> = {
   m: "margin",
@@ -21,6 +23,8 @@ export const spaces: Record<string, string> = {
   pe: "paddingInlineEnd",
 };
 
+export type Space = keyof typeof spacingOptions;
+
 /**
  * Types for space related CSS properties
  */
@@ -28,77 +32,77 @@ export interface SpaceProps {
   /**
    * Margin on top, left, bottom and right
    */
-  m?: CSS.Property.Margin | number;
+  m?: Space;
   /**
    * Margin on top
    */
-  mt?: CSS.Property.Margin | number;
+  mt?: Space;
   /**
    * Margin on right
    */
-  mr?: CSS.Property.MarginRight | number;
+  mr?: Space;
   /**
    * When direction is `ltr`, `me` is equivalent to `marginRight`.
    * When direction is `rtl`, `me` is equivalent to `marginLeft`.
    */
-  me?: CSS.Property.MarginInlineEnd | number;
+  me?: Space;
   /**
    * Margin on bottom
    */
-  mb?: CSS.Property.MarginBottom | number;
+  mb?: Space;
   /**
    * Margin on left
    */
-  ml?: CSS.Property.MarginLeft | number;
+  ml?: Space;
   /**
    * When direction is `ltr`, `ms` is equivalent to `marginLeft`.
    * When direction is `rtl`, `ms` is equivalent to `marginRight`.
    */
-  ms?: CSS.Property.MarginInlineStart | number;
+  ms?: Space;
   /**
    * Margin on left and right
    */
-  mx?: CSS.Property.Margin | number;
+  mx?: Space;
   /**
    * Margin on top and bottom
    */
-  my?: CSS.Property.Margin | number;
+  my?: Space;
   /**
    * Padding on top, left, bottom and right
    */
-  p?: CSS.Property.Padding | number;
+  p?: Space;
   /**
    * Padding on top
    */
-  pt?: CSS.Property.PaddingTop | number;
+  pt?: Space;
   /**
    * Padding on right
    */
-  pr?: CSS.Property.PaddingRight | number;
+  pr?: Space;
   /**
    * When direction is `ltr`, `pe` is equivalent to `paddingRight`.
    * When direction is `rtl`, `pe` is equivalent to `paddingLeft`.
    */
-  pe?: CSS.Property.PaddingInlineEnd | number;
+  pe?: Space;
   /**
    * Padding on bottom
    */
-  pb?: CSS.Property.PaddingBottom | number;
+  pb?: Space;
   /**
    * Padding on left
    */
-  pl?: CSS.Property.PaddingLeft | number;
+  pl?: Space;
   /**
    * When direction is `ltr`, `ps` is equivalent to `paddingLeft`.
    * When direction is `rtl`, `ps` is equivalent to `paddingRight`.
    */
-  ps?: CSS.Property.PaddingInlineStart | number;
+  ps?: Space;
   /**
    * Padding on left and right
    */
-  px?: CSS.Property.Padding | number;
+  px?: Space;
   /**
    * Padding on top and bottom
    */
-  py?: CSS.Property.Padding | number;
+  py?: Space;
 }

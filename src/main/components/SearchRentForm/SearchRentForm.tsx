@@ -2,8 +2,7 @@ import React from "react";
 
 import { Button } from "@ui/forms/Button";
 import { Input } from "@ui/forms/Input";
-import { Grid } from "@ui/layout/Grid/Grid";
-import { GridItem } from "@ui/layout/Grid/GridItem";
+import { Grid, GridItem } from "@ui/layout/Grid";
 
 export const SearchRentForm = () => {
   return (
