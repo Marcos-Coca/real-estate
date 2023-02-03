@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@ui/forms/Button";
 import { Input } from "@ui/forms/Input";
 import { Grid, GridItem } from "@ui/layout/Grid";
+import { Flex } from "@ui/layout/Flex";
 
 export const SearchRentForm = () => {
   return (
@@ -26,7 +27,9 @@ export const SearchRentForm = () => {
         <Input label="Bath" type="text"></Input>
       </GridItem>
       <GridItem col={2}>
-        <Button>Submit</Button>
+        <Flex align="flex-end" h="100%">
+          <Button>Submit</Button>
+        </Flex>
       </GridItem>
     </Grid>
   );

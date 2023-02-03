@@ -1,7 +1,17 @@
-.sizeMd svg {
-  width: var(--size-2);
+.container {
+  display: inline-block;
+}
+
+.sizeMd {
+  width: var(--size-3);
+  height: var(--size-3);
 }
 
 .sizeLg {
-  width: var(--size-4);
+  width: var(--size-7);
+  height: var(--size-7);
+}
+
+.colorPrimary {
+  stroke: var(--font-color-primary);
 }

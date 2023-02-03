@@ -15,6 +15,7 @@ export const Paragraph = ({ children, size = "md", color = "base" }: Props) => {
       color,
       size,
     },
+    classes: [styles.paragraph],
   });
   return <p className={classes}>{children}</p>;
 };

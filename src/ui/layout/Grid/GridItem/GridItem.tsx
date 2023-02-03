@@ -1,9 +1,13 @@
+"use client";
+
+import { useStyleConfig } from "@ui/hooks/useStyleConfig";
+import { UIElement } from "@ui/types/ui-element";
 import React from "react";
 import { useClasses } from "../../../hooks/useClasses";
 
 import styles from "./GridItem.module.css";
 
-export const GridItem = ({ children, col = 1 }: Props) => {
+export const GridItem = ({ children, col = 1, ...rest }: Props) => {
   const classes = useClasses({
     styles,
     stylesClasses: {
@@ -12,10 +16,16 @@ export const GridItem = ({ children, col = 1 }: Props) => {
     classes: [styles.gridItem],
   });
 
-  return <div className={classes}>{children}</div>;
+  const style = useStyleConfig(rest);
+
+  return (
+    <div style={style} className={classes}>
+      {children}
+    </div>
+  );
 };
 
-interface Props {
+interface Props extends UIElement {
   col?: number;
   colXs?: number;
   colSm?: number;

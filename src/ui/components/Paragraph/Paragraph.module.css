@@ -1,9 +1,18 @@
+.paragraph {
+  font-family: var(--font-family-base);
+  margin: 0;
+}
+
 .colorBase {
   color: var(--font-color-base);
 }
 
 .colorInverse {
   color: var(--font-color-inverse);
+}
+
+.colorPrimary {
+  color: var(--font-color-primary);
 }
 
 .sizeSm {

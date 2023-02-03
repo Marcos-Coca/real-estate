@@ -1,3 +1,5 @@
+"use client";
+
 import type { NextPage } from "next";
 import Image from "next/image";
 
@@ -9,36 +11,35 @@ import { SearchRentForm } from "@main/components/SearchRentForm";
 
 const Home: NextPage = () => {
   return (
-    <div className="container">
+    <div>
       <Grid h="100vh">
         <GridItem col={6}>
           <Heading as="h1" size="3xl">
             Need to Rent a House?
           </Heading>
           <Heading as="h2">Well help you find your next home</Heading>
-          <section className="rentForm">
+          <div className="search-form-container">
             <Card>
               <Heading as="h2" mb="6">
                 For Current estimate, please provide the following
               </Heading>
               <SearchRentForm />
             </Card>
-          </section>
+          </div>
         </GridItem>
-        <GridItem col={6}>
+        <GridItem pt="4" col={6}>
           <Image fill src="/images/landing-house-image.png" alt="" />
         </GridItem>
       </Grid>
 
       <style jsx>
         {`
-          .rentForm {
+          .search-form-container {
             position: absolute;
             top: 40%;
             left: 30%;
-            width: 900px;
-            height: 285px;
             z-index: 1;
+            width: 100%;
           }
         `}
       </style>

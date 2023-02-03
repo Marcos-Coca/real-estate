@@ -41,3 +41,7 @@
 .colorPrimary {
   color: var(--font-color-primary);
 }
+
+.colorBlack {
+  color: var(--font-color-black);
+}

@@ -1,14 +1,18 @@
+"use client";
+
 import React from "react";
 
 import { styles } from ".";
 import { useClasses } from "@ui/hooks/useClasses";
+import { Paragraph } from "@ui/components/Paragraph";
 
+import { getButtonStyles } from "./utils";
 interface Props {
   /**
    * specify button colors.
    * @default 'primary'
    */
-  type?: "primary" | "secondary";
+  color?: "primary" | "secondary";
 
   /**
    * If `true`, the button will be disabled.
@@ -20,13 +24,19 @@ interface Props {
    * The content of the button.
    */
   children: string;
+
+  /**
+   *  the variant of the button.
+   * */
+  variant?: "solid" | "outline" | "text";
 }
 
-export const Button = ({ isDisabled, type = "primary", children }: Props) => {
-  const classes = useClasses({ styles, stylesClasses: { type, button: true } });
+export const Button = ({ isDisabled, color = "primary", children, variant = "solid" }: Props) => {
+  const classes = useClasses({ styles, stylesClasses: { color, button: true, variant } });
+  const buttonStyles = getButtonStyles(color, variant);
 
   return (
-    <button disabled={isDisabled} className={classes}>
+    <button style={buttonStyles} disabled={isDisabled} className={classes}>
       {children}
     </button>
   );

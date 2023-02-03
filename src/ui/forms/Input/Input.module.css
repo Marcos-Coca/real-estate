@@ -5,6 +5,7 @@
   border-radius: var(--border-radius-xs);
   border-color: var(--color-base-transparent);
   background-color: var(--input-base-background-color);
+  width: 100%;
 }
 
 .formGroup input:focus {

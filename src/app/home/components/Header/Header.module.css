@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-5) var(--spacing-11);
+  background-color: var(--page-background-color);
+  box-shadow: var(--box-shadow-sm);
+  font-size: var(--font-size-6);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.linksList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  justify-content: space-between;
+  font-weight: var(--font-weight-normal);
+  color: var(--font-color-base);
+}

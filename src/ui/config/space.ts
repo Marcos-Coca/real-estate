@@ -1,6 +1,6 @@
 import spacing from "@tokens/spacing.json";
 
-const spacingOptions = spacing.spacing;
+export const spacingOptions = spacing.spacing;
 
 export const spaces: Record<string, string> = {
   m: "margin",

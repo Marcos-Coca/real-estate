@@ -1,3 +1,5 @@
+"use client";
+
 import { useClasses } from "../../hooks/useClasses";
 
 import { styles } from ".";

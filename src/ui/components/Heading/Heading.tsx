@@ -1,3 +1,5 @@
+"use client";
+
 import { SpaceProps } from "@ui/config/space";
 import { useClasses } from "@ui/hooks/useClasses";
 import { useStyleConfig } from "@ui/hooks/useStyleConfig";
