@@ -4,7 +4,6 @@ import React from "react";
 
 import { styles } from ".";
 import { useClasses } from "@ui/hooks/useClasses";
-import { Paragraph } from "@ui/components/Paragraph";
 
 import { getButtonStyles } from "./utils";
 interface Props {
