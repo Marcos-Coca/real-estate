@@ -22,6 +22,7 @@
     "chromatic": "npx chromatic --project-token=f9b39b599295"
   },
   "dependencies": {
+    "@vis.gl/react-google-maps": "1.0.2",
     "classnames": "^2.3.1",
     "just-compare": "^2.1.1",
     "next": "14.2.3",

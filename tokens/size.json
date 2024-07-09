@@ -10,7 +10,13 @@
     "8": { "value": "3.5rem" },
     "10": { "value": "4.5rem" },
     "13": { "value": "8.75rem" },
-
+    "14": { "value": "10rem" },
+    "16": { "value": "12rem" },
+    "20": { "value": "16rem" },
+    "24": { "value": "20rem" },
+    "28": { "value": "24rem" },
+    "32": { "value": "32rem" },
+    "36": { "value": "36rem" },
     "100%": { "value": "100%" },
     "100vh": { "value": "100vh" },
     "100vw": { "value": "100vw" }

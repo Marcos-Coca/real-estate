@@ -6,7 +6,6 @@
   background-color: var(--page-background-color);
   box-shadow: var(--box-shadow-sm);
   font-size: var(--font-size-6);
-  position: fixed;
   width: 100%;
   z-index: 1;
 }

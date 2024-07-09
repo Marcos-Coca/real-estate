@@ -1,3 +1,5 @@
+"use client";
+
 import { useClasses } from "@ui/hooks/useClasses";
 import React from "react";
 import { ReactSVG } from "react-svg";

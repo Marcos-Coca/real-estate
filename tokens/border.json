@@ -3,7 +3,9 @@
     "radius": {
       "xs": { "value": "0.125rem" },
       "sm": { "value": "0.25rem" },
-      "md": { "value": "0.625rem" }
+      "md": { "value": "0.625rem" },
+      "lg": { "value": "1.25rem" },
+      "xl": { "value": "3.75rem" }
     }
   }
 }

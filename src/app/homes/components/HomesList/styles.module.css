@@ -1,0 +1,39 @@
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  gap: var(--spacing-4);
+  background-color: var(--color-base-white);
+  padding: var(--spacing-4);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-md);
+}
+
+.home img {
+  object-fit: cover;
+  width: var(--size-16);
+  border-radius: var(--border-radius-md);
+}
+
+.amenitiesContainer {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.amenitiesContainer li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  background-color: var(--color-brand-primary-200);
+  padding: var(--spacing-2);
+  border-radius: var(--border-radius-md);
+}

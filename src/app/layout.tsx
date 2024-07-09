@@ -1,7 +1,8 @@
 import "../styles/globals.css";
 import "../styles/tokens.css";
 
-import Footer from "./footer";
+// import Footer from "./footer";
+import { Header } from "./components/Header";
 
 import { ReactNode } from "react";
 
@@ -10,8 +11,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html>
       <head />
       <body>
+        <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

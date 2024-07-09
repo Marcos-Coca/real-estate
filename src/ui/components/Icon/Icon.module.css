@@ -13,5 +13,5 @@
 }
 
 .colorPrimary {
-  stroke: var(--font-color-primary);
+  color: var(--font-color-primary);
 }
